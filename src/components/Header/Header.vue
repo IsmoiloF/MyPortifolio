@@ -1,76 +1,67 @@
 <template>
-  <div>
+  <div class=" fixed w-[100%] shadow-md bg-[#202020]">
     <nav
-      class="bg-gray-900 border-gray-200 px-2 sm:px-4 py-2.5  dark:bg-gray-900"
+      class="  border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 bg-[#202020]"
     >
       <div
-        class="container flex flex-wrap items-center justify-between mx-auto"
+        class="container flex flex-wrap items-center md:justify-between mx-auto"
       >
-        <a href="https://github.com/IsmoiloF?tab=repositories" class="flex items-center">
-          <span
-            class=" text-indigo-100 hover:text-blue-600 self-center text-xl font-semibold whitespace-nowrap dark:text-white"
-            >Portifolio</span
+        <div class="w-[100%] md:w-auto flex justify-between">
+          <a
+            href="https://github.com/IsmoiloF?tab=repositories"
+            class="flex items-center"
           >
-        </a>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-6 h-6"
-            aria-hidden="true"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-        <div class=" w-full  md:block md:w-auto" id="navbar-default">
+            <span
+              class=" text-[#13FF00] self-center text-[30px] font-semibold whitespace-nowrap dark:text-white"
+              >DarkDP</span
+            >
+          </a>
+
+          <span class="text-3xl cursor-pointer md:hidden block ">
+            <i @click="openMenu" v-if="!isMenuOpen" class="bx bx-menu text-white"></i>
+            <i @click="openMenu" v-if="isMenuOpen" class="bx bx-x text-white"></i>
+          </span>
+        </div>
+
+        <div class="w-full md:block md:w-auto" id="navbar-default">
           <ul
-            class="flex flex-col p-4 mt-4  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-gray-900 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            :class="[isMenuOpen ? 'flex' : 'hidden']"
+            id="Nav"
+            class="navbar md:flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0"
           >
             <li class="">
               <a
                 href="#"
-                class="block py-2 pl-3 pr-4 text-indigo-100 hover:text-blue-600"
+                class="active block py-2 pl-3 pr-4 text-white hover:text-[#13FF00]"
                 aria-current="page"
                 >Home</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-indigo-100 hover:text-blue-600"
+                href="#About"
+                class="active block py-2 pl-3 pr-4 text-white hover:text-[#13FF00]"
                 >About</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-indigo-100 hover:text-blue-600"
+                href="#Service"
+                class="block py-2 pl-3 pr-4 text-white hover:text-[#13FF00]"
                 >Services</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-indigo-100 hover:text-blue-600"
-                >Pricing</a
+                href="#Portifolio"
+                class="block py-2 pl-3 pr-4 text-white hover:text-[#13FF00]"
+                >Portifolio</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-indigo-100 hover:text-blue-600"
+                href="#Contact"
+                class="block py-2 pl-3 pr-4 text-white hover:text-[#13FF00]"
                 >Contact</a
               >
             </li>
@@ -83,6 +74,27 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      isMenuOpen: false,
+    };
+  },
+  methods: {
+    openMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    },
+  },
 };
 </script>
-<style></style>
+<style setup>
+.router-link-active {
+  color: rgb(4, 0, 255) !important;
+  text-decoration: undefined;
+}
+
+@media screen and (min-width: 756px) {
+  .navbar {
+    display: flex !important;
+  }
+}
+</style>
