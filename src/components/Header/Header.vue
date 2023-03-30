@@ -1,5 +1,5 @@
 <template>
-  <div class=" fixed w-[100%] shadow-md bg-[#202020]">
+  <div class=" fixed z-50  w-[100%] shadow-md bg-[#202020]">
     <nav
       class="  border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 bg-[#202020]"
     >
@@ -7,12 +7,16 @@
         class="container flex flex-wrap items-center md:justify-between mx-auto"
       >
         <div class="w-[100%] md:w-auto flex justify-between">
+          
           <a
             href="https://github.com/IsmoiloF?tab=repositories"
             class="flex items-center"
           >
+          <div class="text-[30px] border border-[3px] border-[#13FF00] w-[50px] rounded-[50%] text-[#13FF00] font-bold  justify-center items-center flex">
+            DP
+          </div>
             <span
-              class=" text-[#13FF00] self-center text-[30px] font-semibold whitespace-nowrap dark:text-white"
+              class="text-white self-center text-[30px] ml-3 whitespace-nowrap dark:text-white"
               >DarkDP</span
             >
           </a>

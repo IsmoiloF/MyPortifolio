@@ -1,6 +1,7 @@
 <template>
-  <div id="Contact" class="contact container mx-auto min-h-screen pt-[120px] mb-[30px]">
-    <section class="bg-gray-900 w-[70%]  mx-auto  dark:bg-gray-900">
+  <div class="bg-[#161616]">
+    <div id="Contact" class="contact container mx-auto min-h-screen pt-[120px] pb-[50px] ">
+    <section class="bg-[#1D1D1D] w-[70%]  mx-auto  dark:bg-gray-900">
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <h2
           class="mb-4 text-4xl tracking-tight font-extrabold text-center  text-white"
@@ -65,6 +66,8 @@
       </div>
     </section>
   </div>
+  </div>
+
 </template>
 <script>
 export default {

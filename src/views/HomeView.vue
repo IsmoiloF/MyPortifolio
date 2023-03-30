@@ -4,12 +4,13 @@
       id="intro"
       class="container mx-auto min-h-screen flex justify-center items-center gap-[150px]"
     >
-      <div class="w-[500px]">
+      <div class="w-[500px] "
+      data-aos="zoom-in"
+      data-aos-duration="3000">
         <h1 class="text-white text-[30px] w-[500px] font-bold">
           Salom, Men
           <span class="text-[#13FF00]">Ismoilov Shoxruh </span>
-          Full Stack
-          dasturchiman
+          Full Stack dasturchiman
         </h1>
         <div
           class="bg-blue-300 border-[#13FF00] w-[400px] border mt-[20px]"
@@ -20,37 +21,37 @@
         <div class="gap-[20px] flex items-center w-[400px] mt-[20px]">
           <a
             href="https://www.instagram.com/darkdp_/"
-            class="  hover:shadow-md bg-[#353535] w-[40px] h-[40px] flex rounded-[50%] justify-center items-center"
+            class="hover:shadow-md bg-[#353535] w-[40px] h-[40px] flex rounded-[50%] justify-center items-center"
             ><i
-              class="bx bxl-instagram text-[30px] text-white hover:text-black w-[40px] h-[40px]  rounded-[50%] justify-center items-center flex"
+              class="bx bxl-instagram text-[30px] text-white hover:text-black w-[40px] h-[40px] rounded-[50%] justify-center items-center flex"
             ></i
           ></a>
           <a
             href="https://t.me/darkdp_dev"
-            class=" bg-[#353535] hover:text-black  w-[40px] h-[40px] flex rounded-[50%] justify-center items-center"
+            class="bg-[#353535] hover:text-black w-[40px] h-[40px] flex rounded-[50%] justify-center items-center"
             ><i
-              class="bx bxl-telegram text-[30px] text-white hover:text-black w-[40px] h-[40px]  rounded-[50%] justify-center items-center flex"
+              class="bx bxl-telegram text-[30px] text-white hover:text-black w-[40px] h-[40px] rounded-[50%] justify-center items-center flex"
             ></i
           ></a>
           <a
             href="#"
             class="bg-[#353535] w-[40px] h-[40px] flex rounded-[50%] justify-center items-center"
             ><i
-              class="bx bxl-github text-[30px] hover:text-black text-white w-[40px] h-[40px]  rounded-[50%] justify-center items-center flex"
+              class="bx bxl-github text-[30px] hover:text-black text-white w-[40px] h-[40px] rounded-[50%] justify-center items-center flex"
             ></i
           ></a>
           <a
             href="#"
             class="bg-[#353535] w-[40px] h-[40px] flex rounded-[50%] justify-center items-center"
             ><i
-              class="bx bxl-linkedin hover:text-black text-[30px] text-white w-[40px] h-[40px]  rounded-[50%] justify-center items-center flex"
+              class="bx bxl-linkedin hover:text-black text-[30px] text-white w-[40px] h-[40px] rounded-[50%] justify-center items-center flex"
             ></i
           ></a>
           <a
             href="#"
             class="bg-[#353535] w-[40px] h-[40px] flex rounded-[50%] justify-center items-center"
             ><i
-              class="bx bxl-facebook-circle hover:text-black text-[30px] text-white w-[40px] h-[40px]  rounded-[50%] justify-center items-center flex"
+              class="bx bxl-facebook-circle hover:text-black text-[30px] text-white w-[40px] h-[40px] rounded-[50%] justify-center items-center flex"
             ></i
           ></a>
         </div>
@@ -60,14 +61,18 @@
             href="../images/MyCV.pdf
                 "
             download=""
-            class="w-[full] border border-[#13FF00] rounded-lg mt-[100px]  hover:shadow p-[7px] bg-transparet hover:bg-[#13FF00] text-[#13FF00] hover:text-white font-bold text-[20px]"
+            class="w-[full] border border-[#13FF00] rounded-lg mt-[100px] hover:shadow p-[7px] bg-transparet hover:bg-[#13FF00] text-[#13FF00] hover:text-white font-bold text-[20px]"
           >
-            Dovnload CV
+            Download CV
           </a>
         </div>
       </div>
 
-      <div class="w-[500px]">
+      <div
+        class="w-[500px]"
+        data-aos="zoom-in-left"
+        data-aos-duration="3000"
+      >
         <img
           class="border border-[#13FF00] border-[3px] rounded-[50%]"
           src="../images/dar.jpg"
@@ -96,6 +101,10 @@ export default {
     ServiceView,
     PortifolioView,
   },
+
+  mounted(){
+    AOS.init();
+  }
 };
 </script>
 <style>
