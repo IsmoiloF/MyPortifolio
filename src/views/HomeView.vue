@@ -2,22 +2,22 @@
   <div class="bg-[#202020]">
     <div
       id="intro"
-      class="container mx-auto min-h-screen flex justify-center items-center gap-[150px]"
+      class="container mx-auto sm:block  sm:pt-[100px] md:pt-0 md:min-h-screen md:flex md:justify-center items-center md:gap-[150px]"
     >
-      <div class="w-[500px] "
+      <div class="md:w-[500px] w-[80%] mx-auto md:mx-0 md:pt-0 pt-[100px] "
       data-aos="zoom-in"
       data-aos-duration="3000">
-        <h1 class="text-white text-[30px] w-[500px] font-bold">
+        <h1 class="text-white text-[30px] xl:w-[500px] md:w-[300px] w-[300px] font-bold">
           Salom, Men
           <span class="text-[#13FF00]">Ismoilov Shoxruh </span>
           Full Stack dasturchiman
         </h1>
         <div
-          class="bg-blue-300 border-[#13FF00] w-[400px] border mt-[20px]"
+          class="bg-blue-300 border-[#13FF00] w-[90%] md:w-[400px] border mt-[20px]"
         ></div>
         <h1 class="mt-[10px] text-gray-400 text-[20px]">Frontend: Vue js</h1>
         <h1 class="text-[20px] text-gray-400">Backend: Node js</h1>
-        <div class="border-[#13FF00] w-[400px] border mt-[20px]"></div>
+        <div class="border-[#13FF00] w-[90%] md:w-[400px] border mt-[20px]"></div>
         <div class="gap-[20px] flex items-center w-[400px] mt-[20px]">
           <a
             href="https://www.instagram.com/darkdp_/"
@@ -69,12 +69,12 @@
       </div>
 
       <div
-        class="w-[500px]"
+        class="w-[80%] md:w-[500px] mx-auto md:mx-0 mt-[40px]"
         data-aos="zoom-in-left"
         data-aos-duration="3000"
       >
         <img
-          class="border border-[#13FF00] border-[3px] rounded-[50%]"
+          class="border border-[#13FF00] border-[3px] md:rounded-[50%]"
           src="../images/dar.jpg"
           alt=""
         />

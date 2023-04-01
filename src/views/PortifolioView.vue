@@ -11,7 +11,8 @@
         :pagination="{
           clickable: true,
         }"
-        :modules="modules"
+        :modules="modules "
+        :breakpoints="swiperOptions.breakpoints"
         class="mySwiper"
       >
         <swiper-slide>
@@ -168,6 +169,26 @@ export default {
   setup() {
     return {
       modules: [Pagination],
+      swiperOptions:{
+        breakpoints:{
+          320:{
+            slidesPerView:1,
+            spaceBetween:0,
+          },
+          770:{
+            slidesPerView:2,
+            spaceBetween:15
+          },
+          1024:{
+            slidesPerView:3,
+            spaceBetween:20
+          },
+          1350:{
+            slidesPerView:4,
+            spaceBetween:20
+          }
+        }
+      }
     };
   },
 };

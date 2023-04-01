@@ -6,10 +6,10 @@
       </div>
 
       <div
-        class="cards grid-rows-3 flex gap-4 mx-auto justify-between mt-[50px]"
+        class="cards grid-rows-3 md:flex block   mx-auto justify-center md:gap-[100px] mt-[50px] pb-[50px] md:pb-0"
       >
         <div
-          class="w-[450px] bg-[#161616] h-[300px] border border-[#161616] rounded-md hover:shadow-xl shadow-2xl hover:bg-transparent"
+          class="w-[350px] md:mx-0 mt-[20px] md:mt-0 mx-auto md:mx-0 bg-[#161616] h-[280px] border border-[#161616] rounded-md hover:shadow-xl shadow-2xl hover:bg-transparent"
         >
           <div class="w-full justify-center items-center flex mt-[30px] text-white">
             <img class="w-[100px] text-[#13FF00]" src="../images/bx-code-blockweb.png" alt="" />
@@ -20,7 +20,7 @@
           </div>
         </div>
         <div
-          class="w-[450px] bg-[#161616] h-[280px] border border-[#161616] shadow-2xl rounded-md hover:shadow-xl  hover:bg-transparent"
+          class="mx-auto md:mx-0 mt-[20px] md:mt-0 w-[350px] bg-[#161616] h-[280px] border border-[#161616] shadow-2xl rounded-md hover:shadow-xl  hover:bg-transparent"
         >
           <div class="w-full justify-center items-center flex">
             <img
@@ -35,7 +35,7 @@
           </div>
         </div>
         <div
-          class="w-[450px] bg-[#161616] h-[280px] border border-[#161616] shadow-2xl rounded-md hover:shadow-xl hover:bg-transparent"
+          class="mx-auto md:mx-0 mt-[20px] md:mt-0 w-[350px] bg-[#161616] h-[280px] border border-[#161616] shadow-2xl rounded-md hover:shadow-xl hover:bg-transparent"
         >
           <div class="w-full justify-center mt-[35px] items-center flex">
             <img class="w-[60px]" src="../images/Vectormobila.png" alt="" />

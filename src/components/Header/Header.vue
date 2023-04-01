@@ -4,9 +4,9 @@
       class="  border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 bg-[#202020]"
     >
       <div
-        class="container flex flex-wrap items-center md:justify-between mx-auto"
+        class="container flex flex-wrap items-center lg:justify-between mx-auto"
       >
-        <div class="w-[100%] md:w-auto flex justify-between">
+        <div class="w-[100%] lg:w-auto flex justify-between">
           
           <a
             href="https://github.com/IsmoiloF?tab=repositories"
@@ -21,17 +21,17 @@
             >
           </a>
 
-          <span class="text-3xl cursor-pointer md:hidden block ">
+          <span class="text-3xl cursor-pointer sm:hidden block ">
             <i @click="openMenu" v-if="!isMenuOpen" class="bx bx-menu text-white"></i>
             <i @click="openMenu" v-if="isMenuOpen" class="bx bx-x text-white"></i>
           </span>
         </div>
 
-        <div class="w-full md:block md:w-auto" id="navbar-default">
-          <ul
+        <div class="w-full sm:block sm:w-auto" id="navbar-default">
+          <ul 
             :class="[isMenuOpen ? 'flex' : 'hidden']"
             id="Nav"
-            class="navbar md:flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0"
+            class="navbar sm:flex flex-col p-4 mt-4 sm:flex-row sm:space-x-8 sm:mt-0 sm:text-sm sm:font-medium sm:border-0"
           >
             <li class="">
               <a
