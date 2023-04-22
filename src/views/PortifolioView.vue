@@ -1,149 +1,242 @@
 <template>
-  <section id="Portifolio"  class=" bg-[#202020] pb-20">
-    <div class="container mx-auto">
-      <div class="flex flex-col justify-between items-center">
-        <h1 class="text-[40px] text-center pt-[146px] text-white  font-bold">Projects</h1>
-        <div class="w-[35px] mt-3 border-t border-[#13FF00] border-[2px]"></div>
-      </div>
-      <swiper
-        :slidesPerView="3"
-        :spaceBetween="20"
-        :pagination="{
-          clickable: true,
-        }"
-        :modules="modules "
-        :breakpoints="swiperOptions.breakpoints"
-        class="mySwiper"
-      >
-        <swiper-slide>
-          <div class="flex flex-col shadow-xl bg-[#272727] rounded-xl">
-            <img
-              src="../images/unsplash_cZr2sgaxy3Qporti.png"
-              alt="img"
-              class="rounded-t-xl"
-            />
-            <div class="p-4">
-              <h3 class="text-[18px] mt-[20px]">Portfolio Website UI</h3>
-              <div class="flex items-center mt-[6px]">
-                <i class="bx bx-code-alt text-[#13FF00] text-[25px]"></i>
-                <span class="text-[14px] text-slate-500">Web Development</span>
-              </div>
-              <div class="flex items-center justify-between mt-5">
-                <a href="#" class="flex items-center gap-5">
-                  <p>View code</p>
-                  <i class="bx bx-arrow-back rotate-180"></i>
-                </a>
-                <button class="bg-[#13FF00] px-4 py-1 rounded-md">
-                  Live Preview
-                </button>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="flex flex-col shadow-xl bg-[#272727] rounded-xl">
-            <img
-              src="../images/unsplash_cZr2sgaxy3Qporti.png"
-              alt="img"
-              class="rounded-t-xl"
-            />
-            <div class="p-4">
-              <h3 class="text-[18px] mt-[20px]">Portfolio Website UI</h3>
-              <div class="flex items-center mt-[6px]">
-                <i class="bx bx-code-alt text-[#13FF00] text-[25px]"></i>
-                <span class="text-[14px] text-slate-500">Web Development</span>
-              </div>
-              <div class="flex items-center justify-between mt-5">
-                <a href="#" class="flex items-center gap-5">
-                  <p>View code</p>
-                  <i class="bx bx-arrow-back rotate-180"></i>
-                </a>
-                <button class="bg-[#13FF00] px-4 py-1 rounded-md">
-                  Live Preview
-                </button>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="flex flex-col shadow-xl bg-[#272727] rounded-xl">
-            <img
-              src="../images/unsplash_cZr2sgaxy3Qporti.png"
-              alt="img"
-              class="rounded-t-xl"
-            />
-            <div class="p-4">
-              <h3 class="text-[18px] mt-[20px]">Portfolio Website UI</h3>
-              <div class="flex items-center mt-[6px]">
-                <i class="bx bx-code-alt text-[#13FF00] text-[25px]"></i>
-                <span class="text-[14px] text-slate-500">Web Development</span>
-              </div>
-              <div class="flex items-center justify-between mt-5">
-                <a href="#" class="flex items-center gap-5">
-                  <p>View code</p>
-                  <i class="bx bx-arrow-back rotate-180"></i>
-                </a>
-                <button class="bg-[#13FF00] px-4 py-1 rounded-md">
-                  Live Preview
-                </button>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="flex flex-col shadow-xl bg-[#272727] rounded-xl">
-            <img
-              src="../images/unsplash_cZr2sgaxy3Qporti.png"
-              alt="img"
-              class="rounded-t-xl"
-            />
-            <div class="p-4">
-              <h3 class="text-[18px] mt-[20px]">Portfolio Website UI</h3>
-              <div class="flex items-center mt-[6px]">
-                <i class="bx bx-code-alt text-[#13FF00] text-[25px]"></i>
-                <span class="text-[14px] text-slate-500">Web Development</span>
-              </div>
-              <div class="flex items-center justify-between mt-5">
-                <a href="#" class="flex items-center gap-5">
-                  <p>View code</p>
 
-                  <i class="bx bx-arrow-back rotate-180"></i>
-                </a>
-                <button class="bg-[#13FF00] px-4 py-1 rounded-md">
-                  Live Preview
-                </button>
+     <div class="bg-[#202020] py-[50px]" id="Portifolio">
+           <!-- Portfolio -->
+           <section
+          id="portfolio"
+          class="container mx-auto main-content__portfolio w-[80%] mx-auto mb-16"
+        >
+          <div class="title text-center mb-8">
+            <h2 class="text-[32px] font-bold capitalize mb-4 text-white">portfolio</h2>
+            <p class="max-w-[438px] text-[#fffc] mx-auto">
+              Below you can see some of my projects and my portfolio
+            </p>
+          </div>
+          <div class="flex justify-between flex-wrap">
+            <!-- 1 -->
+            <div class="card w-[48.5%] md:w-[32%] mb-3 sm:mb-6 relative">
+              <img
+                src="../images/carDrivo.jpg"
+                alt="card-img"
+                class="w-full h-[160px] sm:h-[300px] object-cover"
+              />
+              <div
+                class="flex flex-col justify-center items-center absolute left-0 top-0 w-full h-full p-4 bg-[#000000d0] opacity-0 hover:opacity-100 duration-200"
+              >
+                <h3
+                  class="text-center text-sm sm:text-lg uppercase font-semibold mb-3"
+                >
+                  Car Drivo
+                </h3>
+                <div class="flex items-center justify-center">
+                  <div
+                    class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-400 text-gray-400 hover:border-white hover:text-white duration-200 mr-1"
+                  >
+                    <a
+                      href="https://gentle-gumption-bcbc18.netlify.app/"
+                      target="_blank"
+                      class="text-2xl bx bx-link"
+                    ></a>
+                  </div>
+                  <div
+                    class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-400 text-gray-400 hover:border-white hover:text-white duration-200 ml-1"
+                  >
+                    <a
+                      href="https://github.com/IsmoiloF/CarDrivo"
+                      target="_blank"
+                      class="text-2xl bx bxl-github"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="card w-[48.5%] md:w-[32%] mb-3 sm:mb-6 relative">
+              <img
+                src="../images/portifolio.jpg"
+                alt="card-img"
+                class="w-full h-[160px] sm:h-[300px] object-cover"
+              />
+              <div
+                class="flex flex-col justify-center items-center absolute left-0 top-0 w-full h-full p-4 bg-[#000000d0] opacity-0 hover:opacity-100 duration-200"
+              >
+                <h3
+                  class="text-center text-sm sm:text-lg uppercase font-semibold mb-3"
+                >
+                  Portifolio
+                </h3>
+                <div class="flex items-center justify-center">
+                  <div
+                    class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-400 text-gray-400 hover:border-white hover:text-white duration-200 mr-1"
+                  >
+                    <a
+                      href="https://delicate-centaur-adb411.netlify.app/"
+                      target="_blank"
+                      class="text-2xl bx bx-link"
+                    ></a>
+                  </div>
+                  <div
+                    class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-400 text-gray-400 hover:border-white hover:text-white duration-200 ml-1"
+                  >
+                    <a
+                      href="https://github.com/IsmoiloF/Portifolio"
+                      target="_blank"
+                      class="text-2xl bx bxl-github"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="card w-[48.5%] md:w-[32%] mb-3 sm:mb-6 relative">
+              <img
+                src="../images/countries.jpg"
+                alt="card-img"
+                class="w-full h-[160px] sm:h-[300px] object-cover"
+              />
+              <div
+                class="flex flex-col justify-center items-center absolute left-0 top-0 w-full h-full p-4 bg-[#000000d0] opacity-0 hover:opacity-100 duration-200"
+              >
+                <h3
+                  class="text-center text-sm sm:text-lg uppercase font-semibold mb-3"
+                >
+                  Countries
+                </h3>
+                <div class="flex items-center justify-center">
+                  <div
+                    class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-400 text-gray-400 hover:border-white hover:text-white duration-200 mr-1"
+                  >
+                    <a
+                      href="https://boisterous-choux-2a726e.netlify.app/"
+                      target="_blank"
+                      class="text-2xl bx bx-link"
+                    ></a>
+                  </div>
+                  <div
+                    class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-400 text-gray-400 hover:border-white hover:text-white duration-200 ml-1"
+                  >
+                    <a
+                      href="https://github.com/IsmoiloF/Countries"
+                      target="_blank"
+                      class="text-2xl bx bxl-github"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="card w-[48.5%] md:w-[32%] mb-3 sm:mb-6 relative">
+              <img
+                src="../images/elcar.jpg"
+                alt="card-img"
+                class="w-full h-[160px] sm:h-[300px] object-cover"
+              />
+              <div
+                class="flex flex-col justify-center items-center absolute left-0 top-0 w-full h-full p-4 bg-[#000000d0] opacity-0 hover:opacity-100 duration-200"
+              >
+                <h3
+                  class="text-center text-sm sm:text-lg uppercase font-semibold mb-3"
+                >
+                  El Car
+                </h3>
+                <div class="flex items-center justify-center">
+                  <div
+                    class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-400 text-gray-400 hover:border-white hover:text-white duration-200 mr-1"
+                  >
+                    <a
+                      href="https://heroic-flan-c9c1ea.netlify.app/"
+                      target="_blank"
+                      class="text-2xl bx bx-link"
+                    ></a>
+                  </div>
+                  <div
+                    class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-400 text-gray-400 hover:border-white hover:text-white duration-200 ml-1"
+                  >
+                    <a
+                      href="https://github.com/IsmoiloF/R-car"
+                      target="_blank"
+                      class="text-2xl bx bxl-github"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="card w-[48.5%] md:w-[32%] mb-3 sm:mb-6 relative">
+              <img
+                src="../images/ticket.webp"
+                alt="card-img"
+                class="w-full h-[160px] sm:h-[300px] object-cover"
+              />
+              <div
+                class="flex flex-col justify-center items-center absolute left-0 top-0 w-full h-full p-4 bg-[#000000d0] opacity-0 hover:opacity-100 duration-200"
+              >
+                <h3
+                  class="text-center text-sm sm:text-lg uppercase font-semibold mb-3"
+                >Ticket 
+                </h3>
+                <div class="flex items-center justify-center">
+                  <div
+                    class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-400 text-gray-400 hover:border-white hover:text-white duration-200 mr-1"
+                  >
+                    <a
+                      href="https://github.com/IsmoiloF/MyTicket"
+                      target="_blank"
+                      class="text-2xl bx bx-link"
+                    ></a>
+                  </div>
+                  <div
+                    class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-400 text-gray-400 hover:border-white hover:text-white duration-200 ml-1"
+                  >
+                    <a
+                      href="https://github.com/IsmoiloF/MyTicket"
+                      target="_blank"
+                      class="text-2xl bx bxl-github"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="card w-[48.5%] md:w-[32%] mb-3 sm:mb-6 relative">
+              <img
+                src="../images/bikerental.jpg"
+                alt="card-img"
+                class="w-full h-[160px] sm:h-[300px] object-cover"
+              />
+              <div
+                class="flex flex-col justify-center items-center absolute left-0 top-0 w-full h-full p-4 bg-[#000000d0] opacity-0 hover:opacity-100 duration-200"
+              >
+                <h3
+                  class="text-center text-sm sm:text-lg uppercase font-semibold mb-3"
+                >
+                  Bike Rental
+                </h3>
+                <div class="flex items-center justify-center">
+                  <div
+                    class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-400 text-gray-400 hover:border-white hover:text-white duration-200 mr-1"
+                  >
+                    <a
+                      href="https://github.com/IsmoiloF/Bike-Rental/tree/main/Bike%20Rental"
+                      target="_blank"
+                      class="text-2xl bx bx-link"
+                    ></a>
+                  </div>
+                  <div
+                    class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-400 text-gray-400 hover:border-white hover:text-white duration-200 ml-1"
+                  >
+                    <a
+                      href="https://github.com/IsmoiloF/Bike-Rental/tree/main/Bike%20Rental"
+                      target="_blank"
+                      class="text-2xl bx bxl-github"
+                    ></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="flex flex-col shadow-xl bg-[#272727] rounded-xl">
-            <img
-              src="../images/unsplash_cZr2sgaxy3Qporti.png"
-              alt="img"
-              class="rounded-t-xl"
-            />
-            <div class="p-4">
-              <h3 class="text-[18px] mt-[20px]">Portfolio Website UI</h3>
-              <div class="flex items-center mt-[6px]">
-                <i class="bx bx-code-alt text-[#13FF00] text-[25px]"></i>
-                <span class="text-[14px] text-slate-500">Web Development</span>
-              </div>
-              <div class="flex items-center justify-between mt-5">
-                <a href="#" class="flex items-center gap-5">
-                  <p>View code</p>
-                  <i class="bx bx-arrow-back rotate-180"></i>
-                </a>
-                <button class="bg-[#13FF00] px-4 py-1 rounded-md">
-                  Live Preview
-                </button>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-      </swiper>
-    </div>
-  </section>
+        </section>
+     </div>
 </template>
 
 <script>

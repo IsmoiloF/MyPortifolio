@@ -1,53 +1,111 @@
 <template>
-  <div class="bg-[#1D1D1D]">
-    <div id="Service" class="service pt-[150px] min-h-screen container mx-auto">
-      <div class="justify-center items-center flex">
-        <h1 class="text-[35px] text-white font-bold">My Services</h1>
-      </div>
 
-      <div
-        class="cards grid-rows-3 md:flex block   mx-auto justify-center md:gap-[100px] mt-[50px] pb-[50px] md:pb-0"
-      >
-        <div
-          class="w-[350px] md:mx-0 mt-[20px] md:mt-0 mx-auto md:mx-0 bg-[#161616] h-[280px] border border-[#161616] rounded-md hover:shadow-xl shadow-2xl hover:bg-transparent"
+
+  <div class="bg-[#1D1D1D]">
+    <section
+          id="services"
+          class="container   main-content__services w-[75%] mx-auto py-[50px]"
         >
-          <div class="w-full justify-center items-center flex mt-[30px] text-white">
-            <img class="w-[100px] text-[#13FF00]" src="../images/bx-code-blockweb.png" alt="" />
+          <div class="title text-center mb-8">
+            <h2 class="text-[32px] font-bold capitalize mb-4 text-white">my services</h2>
+            <p class="max-w-[438px] text-[#fffc] mx-auto">
+              I can offer several of my services for you. You can get acquainted
+              with them below.
+            </p>
           </div>
-          <div class="text-center">
-            <h1 class="mt-[20px] text-[30px] text-white">Web Development</h1>
-            <p class="mt-[10px] text-white">Blog, E-Commerce</p>
+          <div class="flex justify-between flex-wrap">
+            <!-- 1 -->
+            <div
+              class="card bg-[#242424] p-8 w-full sm:w-[48.5%] md:w-[32%] flex flex-col items-center mb-3 sm:mb-6"
+            >
+              <img
+                src="../images/responsive.png"
+                alt="card-image"
+                class="mb-6 w-[100px] "
+              />
+              <h3 class="text-lg font-medium mb-2 capitalize text-white">
+                Responsive Design
+              </h3>
+              <p class="text-[#fffc] text-[15px] text-center">
+                Creating a responsive web template
+              </p>
+            </div>
+            <!-- 2 -->
+            <div
+              class="card bg-[#242424] p-8 w-full sm:w-[48.5%] md:w-[32%] flex flex-col items-center mb-3 sm:mb-6"
+            >
+              <img
+                src="../images/crm.png"
+                alt="card-image"
+                class="mb-6 w-[100px]"
+              />
+              <h3 class="text-lg font-medium mb-2 capitalize text-white">CRM systems</h3>
+              <p class="text-[#fffc] text-[15px] text-center text-white">
+                CRM systems to grow your business
+              </p>
+            </div>
+            <!-- 3 -->
+            <div
+              class="card bg-[#242424] p-8 w-full sm:w-[48.5%] md:w-[32%] flex flex-col items-center mb-3 sm:mb-6"
+            >
+              <img
+                src="../images/spa.png"
+                alt="card-image"
+                class="mb-6 w-[100px]"
+              />
+              <h3 class="text-lg font-medium mb-2 capitalize text-white">SPA</h3>
+              <p class="text-[#fffc] text-[15px] text-center">
+                Creating a Single Page Applications
+              </p>
+            </div>
+            <!-- 4 -->
+            <div
+              class="card bg-[#242424] p-8 w-full sm:w-[48.5%] md:w-[32%] flex flex-col items-center mb-3 sm:mb-6"
+            >
+              <img
+                src="../images/architect.png"
+                alt="card-image"
+                class="mb-6 w-[70px]"
+              />
+              <h3 class="text-lg font-medium mb-2 capitalize text-white ">
+                backend architecture
+              </h3>
+              <p class="text-[#fffc] text-[15px] text-center">
+                Building backend applications and their architecture
+              </p>
+            </div>
+            <!-- 5 -->
+            <div
+              class="card bg-[#242424] p-8 w-full sm:w-[48.5%] md:w-[32%] flex flex-col items-center mb-3 sm:mb-6"
+            >
+              <img
+                src="../images/bot.png"
+                alt="card-image"
+                class="mb-6 w-[100px]"
+              />
+              <h3 class="text-lg font-medium mb-2 capitalize text-white">telegram bot</h3>
+              <p class="text-[#fffc] text-[15px] text-center">
+                Creating all kinds of telegram bots
+              </p>
+            </div>
+            <!-- 6 -->
+            <div
+              class="card bg-[#242424] p-8 w-full sm:w-[48.5%] md:w-[32%] flex flex-col items-center mb-3 sm:mb-6"
+            >
+              <img
+                src="../images/hosting.png"
+                alt="card-image"
+                class="mb-6 w-[100px]"
+              />
+              <h3 class="text-lg font-medium mb-2 capitalize text-white">Hosting</h3>
+              <p class="text-[#fffc] text-[15px] text-center">
+                Domen, Hosting and SEO optimization
+              </p>
+            </div>
           </div>
-        </div>
-        <div
-          class="mx-auto md:mx-0 mt-[20px] md:mt-0 w-[350px] bg-[#161616] h-[280px] border border-[#161616] shadow-2xl rounded-md hover:shadow-xl  hover:bg-transparent"
-        >
-          <div class="w-full justify-center items-center flex">
-            <img
-              class="w-[80px] mt-[35px]"
-              src="../images/Vectoruii.png"
-              alt=""
-            />
-          </div>
-          <div class="text-center">
-            <h1 class="mt-[20px] text-[30px] text-white">UI/UX Design</h1>
-            <p class="text-white mt-[10px]">Mobile app, website design</p>
-          </div>
-        </div>
-        <div
-          class="mx-auto md:mx-0 mt-[20px] md:mt-0 w-[350px] bg-[#161616] h-[280px] border border-[#161616] shadow-2xl rounded-md hover:shadow-xl hover:bg-transparent"
-        >
-          <div class="w-full justify-center mt-[35px] items-center flex">
-            <img class="w-[60px]" src="../images/Vectormobila.png" alt="" />
-          </div>
-          <div class="text-center">
-            <h1 class="mt-[20px] text-[30px] text-white">Mobilagraph</h1>
-            <p class="mt-[10px] text-white">portrait, product photography</p>
-          </div>
-        </div>
-      </div>
-    </div>
+        </section>
   </div>
+
 </template>
 <script>
 export default {

@@ -2,7 +2,7 @@
   <div class="bg-[#202020]">
     <div
       id="intro"
-      class="container mx-auto sm:block  sm:pt-[100px] md:pt-0 md:min-h-screen md:flex md:justify-center items-center md:gap-[150px]"
+      class="container mx-auto sm:block  sm:pt-[100px] md:pt-0 min-h-screen md:flex md:justify-center items-center md:gap-[150px]"
     >
       <div class="md:w-[500px] w-[80%] mx-auto md:mx-0 md:pt-0 pt-[100px] "
       data-aos="zoom-in"
@@ -20,7 +20,7 @@
         <div class="border-[#13FF00] w-[90%] md:w-[400px] border mt-[20px]"></div>
         <div class="gap-[20px] flex items-center w-[400px] mt-[20px]">
           <a
-            href="https://www.instagram.com/darkdp_/"
+            href="https://www.instagram.com"
             class="hover:shadow-md bg-[#353535] w-[40px] h-[40px] flex rounded-[50%] justify-center items-center"
             ><i
               class="bx bxl-instagram text-[30px] text-white hover:text-black w-[40px] h-[40px] rounded-[50%] justify-center items-center flex"
@@ -56,12 +56,12 @@
           ></a>
         </div>
 
-        <div class="mt-[80px]">
+        <div class="mt-[80px] ]">
           <a
             href="../images/MyCV.pdf
                 "
             download=""
-            class="w-[full] border border-[#13FF00] rounded-lg mt-[100px] hover:shadow p-[7px] bg-transparet hover:bg-[#13FF00] text-[#13FF00] hover:text-white font-bold text-[20px]"
+            class="w-[full] border border-[#13FF00] rounded-lg mt-[100px] hover:shadow p-[7px] bg-transparet hover:bg-[#13FF00] text-[#13FF00] hover:text-white font-bold text-[20px] "
           >
             Download CV
           </a>
@@ -74,7 +74,7 @@
         data-aos-duration="3000"
       >
         <img
-          class="border border-[#13FF00] border-[3px] md:rounded-[50%]"
+          class="home_image border border-[#13FF00] border-[3px] md:rounded-[50%]"
           src="../images/dar.jpg"
           alt=""
         />
@@ -114,4 +114,14 @@ p {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
+@media only screen and (max-width: 600px) {
+    .container {
+      max-width: 600px;
+    }
+    .home_image{
+      display: hidden;
+      display: none;
+    }
+  }
 </style>

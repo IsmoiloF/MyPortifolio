@@ -11,8 +11,7 @@
         <p
           class="mb-8 lg:mb-16 font-light text-center text-white dark:text-gray-400 sm:text-xl"
         >
-          Got a technical issue? Want to send feedback about a beta feature?
-          Need details about our Business plan? Let us know.
+        You can contact me on social networks or by filling out the form below
         </p>
         <form action="#" class="space-y-8">
           <div class="">
@@ -57,10 +56,15 @@
             ></textarea>
           </div>
           <button
+          class=""
             type="submit"
-            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-          >
-            Send message
+          >  <a href="https://darkdp.dev@gmail.com" class="p-4  flex justify-center items-center my-auto max-w-[100px] sm:max-w-[205px]  py-2 bg-[#13ff00] rounded-lg  mt-5 sm:mt-10">
+                                <i class='bx bxs-envelope text-xl sm:text-3xl mr-2 sm:mr-5' ></i> 
+                                <p class=" text-lg sm:text-xl font-medium">
+                                    Send
+                                </p>
+                                
+                            </a>
           </button>
         </form>
       </div>
